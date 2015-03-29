@@ -1,6 +1,6 @@
 let g:gohelp_bufnr=-1
 
-function! GoHelpSaveThat()
+function! GoCompleteNote()
     let note = go#complete#GetInfo()
     let current_view = winsaveview()
     let current_winnr = winnr()
