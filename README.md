@@ -1,8 +1,23 @@
-Look ma no hands!
+vim go complete helper
 ================
 
-![usage example](https://cloud.githubusercontent.com/assets/8445924/6559701/8ed9e3a8-c67c-11e4-8859-8ceafaa23785.gif)
+Now this plugin has dependencies:
+- vim-go
+- UltiSnips
+
+Installation
+===========
 
 ```viml
-inoremap <C-E> <C-O>:call GoCompleteNote()<CR><C-O>a
+Plug 'kovetskiy/vim-go-complete-utils'
 ```
+
+Bindings:
+```viml
+inoremap <C-E> <C-O>:call GoCompleteNote()<CR><C-O>a
+inoremap <C-Y> <C-R>=GoCompleteSnippet()<CR>
+```
+
+Todo
+====
+- [ ] Usage example (gif)
