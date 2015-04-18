@@ -1,5 +1,10 @@
 function! GoCompleteSnippet()
     let note   = go#complete#GetInfo()
+
+    if empty(note)
+        return ""
+    endif
+
     let pieces = split(note, '(')
     let fnName = substitute(pieces[0], 'func ', '', '')
     let fnArgs = split(split(pieces[1], ')')[0], ', ')
